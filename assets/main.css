@@ -169,6 +169,28 @@ a {
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
 }
+.close {
+    color: #986F59;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: -32px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    border: antiquewhite;
+    width: 1em;
+}
+
+.close:hover,
+.close:focus {
+    color: #986F59;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 #modal-title {
     font-size: 3em;
     margin: 15px 0 0 0;
@@ -181,10 +203,11 @@ a {
     margin: 15px 0 0 0;
 }
 .modal-content {
+    position: relative;
     background-color: antiquewhite;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid antiquewhite;
     width: 60%;
     border-radius: 20px;
     display: flex;
@@ -218,7 +241,7 @@ a {
         display: block;
     }
     .modal-content {
-        width: 80%;
+        width: 90%;
     }
     #modal-title {
         font-size: 2em;
@@ -227,7 +250,6 @@ a {
         font-size: 1.5em;
     }
     .chart-container {
-        
         width: 75%;
     }
 

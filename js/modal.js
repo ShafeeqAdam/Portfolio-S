@@ -83,3 +83,8 @@ window.onclick = function (event) {
     }
   }
 };
+
+let closeModal = document.querySelector(".close");
+closeModal.addEventListener("click", function () {
+  modal.style.display = "none";
+});
