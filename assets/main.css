@@ -95,7 +95,7 @@ h2 {
 
 .work-box {
     width: calc((100% / 3) - 2%); 
-    margin-left: 1em;
+    margin-left: 10px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     border-radius: 5px;
     overflow: hidden;
@@ -128,7 +128,7 @@ h4 {
     margin: 0;
 }
 .chart-container {
-    width: 30%;
+    width: 60%;
 }
 #myChart {
     aspect-ratio: auto !important; 
