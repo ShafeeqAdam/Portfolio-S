@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Shafeeq</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+    
+</head>
+<body>
+    <header>
+       
+        <div id="intro">
+            <div class="polaroid">
+                <img class="image-polaroid" src="./image/oim.jpg" alt="pp oim">
+                <div class="caption"><i class="fa-brands fa-react"></i>
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+            </div>
+            <div class="intro-text">
+                <h1>Shafeeq</h1>
+                <p id="typed-text"></p>
+            </div>
+        </div>
+                    
+    </header>
+    <main>      
+        <div class="work-section">
+            <div class="work-filter">
+                <h2>Mes Travaux</h2>
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn active" data-filter="css">CSS</button>
+                <button class="filter-btn active" data-filter="react">React</button>
+                <button class="filter-btn active" data-filter="redux">Redux</button>
+            </div>
+            <div class="work-container">
+                <div class="work-box" data-category="css" id="project1">
+                    <img src="./image/css.png" alt="Travail 1">
+                    <h3>Oh My Food</h3>
+                                   
+                </div>
+                <div class="work-box" data-category="react" id="project2">
+                    <img src="./image/react.png" alt="Travail 2">
+                    
+                    <h3>Kasa</h3>
+                    
+                </div>
+                <div class="work-box" data-category="redux" id="project3">
+                    <img src="./image/redux.png" alt="Travail 3">
+                    <h3>Argent-Bank</h3>
+                    
+                </div>
+            </div>
+        </div>  
+       <section id="formation-section">
+        <h4>Formation</h4>
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+          </div>
+        </section> 
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li> 
+                    <a href="https://www.linkedin.com/in/shafeeq-soopee-7535b3108/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/ShafeeqAdam" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <p>Copyright © Shafeeq Soopee</p>
+    </footer>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div id="slider">
+              </div>
+          <h3 id="modal-title"></h3>
+          <p id="modal-description"></p>
+        </div>
+    </div>      
+    <script src="./js/filter.js"></script>
+    <script src="./js/portfolio.js"></script>
+    <script src="./js/chart.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="https://kit.fontawesome.com/d0513fc1fa.js" crossorigin="anonymous"></script>
+</body>
+</html>
