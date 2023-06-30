@@ -15,7 +15,7 @@ const projectDescriptions = {
   project2:
     "Le site de Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec un code legacy important. Le but du projet est une refonte totale pour passer à une stack complète en Js avec NodeJS côté back-end, et React côté front-end 😸.",
   project3:
-    "Argent Bank est une banque en ligne, le but de ce projet était de mettre en place du tableau de bord pour utilisateurs, avec MongoDB côté back-end et React/Redux côté front-end. Un Swagger a également été créer pour penser à la modélisations de routes API, si l'utilisateur veut gérer ses transactions 😸.",
+    "Argent Bank est une banque en ligne, le but de ce projet était de mettre en place un tableau de bord pour utilisateurs, avec MongoDB côté back-end et React/Redux côté front-end. Un Swagger a également été créer pour penser à la modélisations de routes API, si l'utilisateur veut gérer ses transactions 😸.",
 };
 
 const modal = document.getElementById("modal");
