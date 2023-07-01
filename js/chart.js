@@ -52,3 +52,10 @@ function handleIntersection(entries, observer) {
 const observer = new IntersectionObserver(handleIntersection);
 
 observer.observe(document.getElementById("formation-section"));
+
+/*handleIntersection est un "gestionnaire de callback" pour IntersectionObserver. 
+Elle est appelée chaque fois que formation-section entre ou sort du viewport.
+
+Chaque "entry" représente un changement d'intersection pour un élément donné 
+cad chaque fois qu'un élément entre ou sort du viewport.
+*/

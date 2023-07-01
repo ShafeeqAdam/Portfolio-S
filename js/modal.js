@@ -1,3 +1,5 @@
+/*décla de toutes les variables */
+
 const projectImages = {
   project1: ["image/omf1.png", "image/omf2.png"],
   project2: ["image/kasa1.png", "image/kasa2.png", "image/kasa3.png"],
@@ -27,10 +29,27 @@ const projectTitles = {
 const modal = document.getElementById("modal");
 const modalTitle = document.getElementById("modal-title");
 const modalDescription = document.getElementById("modal-description");
-
 let currentSlide = 0;
 let slides;
 let slideInterval;
+
+/* D'abord, je défini l'id,
+Ensuite, je définis slider en allant chercher l'id,
+Après, il utilise crée une boucle  pour supp tous les éléments enfants dans le slider.
+je recup la liste des images correspondantes au projet.
+pour chaque image dans cette liste, 
+je crée un nouvel élément d'image, 
+lui donne la classe slide, 
+définit sa src à l'URL de l'image, 
+et cache l'image, on oublie pas d'ajouter l'image à la fin du slider.
+
+je définit ensuite slides pour être une liste de tous les éléments 
+avec la classe slide et je montre la première image.
+
+je recup le titre, la description du projet à partir de projectTitles et projectDescriptions, 
+les place dans la modale, et affiche la modale.
+
+et enfiiiiiiin, j'appelle slide interval avec nextSlide en argument . */
 
 document.querySelectorAll(".work-box").forEach((box) => {
   box.addEventListener("click", function () {
@@ -71,11 +90,18 @@ document.querySelectorAll(".work-box").forEach((box) => {
   });
 });
 
+/*fonction qui masque l'image courante . 
+et passe à la suivante, toutes les 3 secondes 
+quand la modale est affichée. */
+
 function nextSlide() {
   slides[currentSlide].style.display = "none";
   currentSlide = (currentSlide + 1) % slides.length;
   slides[currentSlide].style.display = "block";
 }
+
+/* fonction qui fait que quand on click en 
+dehors de la modale elle se ferme */
 
 window.onclick = function (event) {
   if (event.target == modal) {
@@ -86,6 +112,9 @@ window.onclick = function (event) {
     }
   }
 };
+
+/* fonction qui permet de fermer la modale quand 
+qqn click sur la croix/close */
 
 let closeModal = document.querySelector(".close");
 closeModal.addEventListener("click", function () {
