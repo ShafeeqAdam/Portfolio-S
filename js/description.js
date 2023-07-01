@@ -7,16 +7,12 @@ const projectDescriptions = {
 
 document.querySelectorAll(".work-box").forEach((item) => {
   item.addEventListener("click", (event) => {
-    // Get the id of the clicked item
     let id = event.target.id;
 
-    // Get the corresponding description
     let description = projectDescriptions[id];
 
-    // Display the description in the modal
     document.getElementById("modal-description").textContent = description;
 
-    // Display the modal
     document.getElementById("modal").style.display = "block";
   });
 });

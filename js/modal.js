@@ -31,14 +31,12 @@ document.querySelectorAll(".work-box").forEach((box) => {
     let id = this.id;
     let slider = document.getElementById("slider");
 
-    // Supprimez les anciennes diapositives
     while (slider.firstChild) {
       slider.removeChild(slider.firstChild);
     }
 
     let images = projectImages[id];
 
-    // Ajoutez de nouvelles diapositives
     images.forEach((src, index) => {
       let img = document.createElement("img");
       img.className = "slide";
@@ -58,13 +56,11 @@ document.querySelectorAll(".work-box").forEach((box) => {
 
     modal.style.display = "block";
 
-    // Nettoyer l'intervalle précédent
     if (slideInterval) {
       clearInterval(slideInterval);
     }
 
-    // Démarrez le diaporama après avoir ajouté les diapositives
-    slideInterval = setInterval(nextSlide, 3000); // Changer de diapositive
+    slideInterval = setInterval(nextSlide, 3000);
   });
 });
 
@@ -77,7 +73,7 @@ function nextSlide() {
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
-    // Nettoyer l'intervalle lorsque la modale est fermée
+
     if (slideInterval) {
       clearInterval(slideInterval);
     }

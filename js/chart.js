@@ -27,8 +27,8 @@ function initChart() {
           labels: {
             color: "rgba(250, 235, 215, 1)",
             font: {
-              size: 18, // Taille du texte
-              family: "Cookie", // Police du texte
+              size: 18,
+              family: "Cookie",
             },
           },
         },
