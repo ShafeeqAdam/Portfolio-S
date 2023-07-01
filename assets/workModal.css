@@ -61,7 +61,16 @@
     width: 100%; 
     border-radius: 20px;
 }
-
+@media (max-width: 855px) {
+    #modal-title {
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 100%;
+        font-size: 1.8em;
+    }
+}
 @media (max-width: 768px) {
     .modal {
         padding-top: 20vh;
