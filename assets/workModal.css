@@ -69,10 +69,7 @@
     .modal-content {
         width: 90%;
     }
-    #modal-title {
-        font-size: 2em;
-    }
-    #modal-description {
+    #modal-description, #modal-title {
         font-size: 1.5em;
     }
 }

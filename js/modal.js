@@ -18,6 +18,12 @@ const projectDescriptions = {
     "Argent Bank est une banque en ligne, le but de ce projet était de mettre en place un tableau de bord pour utilisateurs, avec MongoDB côté back-end et React/Redux côté front-end. Un Swagger a également été créer pour penser à la modélisations de routes API, si l'utilisateur veut gérer ses transactions 😸.",
 };
 
+const projectTitles = {
+  project1: "https://github.com/ShafeeqAdam/ohmyfood.git",
+  project2: "https://github.com/ShafeeqAdam/Kasa.git",
+  project3: "https://github.com/ShafeeqAdam/Argent_Bank.github.io.git",
+};
+
 const modal = document.getElementById("modal");
 const modalTitle = document.getElementById("modal-title");
 const modalDescription = document.getElementById("modal-description");
@@ -50,8 +56,9 @@ document.querySelectorAll(".work-box").forEach((box) => {
     currentSlide = 0;
     slides[currentSlide].style.display = "block";
 
+    let title = projectTitles[id];
     let description = projectDescriptions[id];
-    modalTitle.innerHTML = this.querySelector("h3").textContent;
+    modalTitle.innerHTML = title;
     modalDescription.textContent = description;
 
     modal.style.display = "block";
