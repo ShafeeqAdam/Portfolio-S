@@ -69,7 +69,15 @@
     .modal-content {
         width: 90%;
     }
-    #modal-description, #modal-title {
+    #modal-title {
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 100%;
+        font-size: 1.5em;
+    }
+    #modal-description {
         font-size: 1.5em;
     }
 }
